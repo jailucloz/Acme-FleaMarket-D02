@@ -51,6 +51,7 @@
        `id` integer not null,
         `version` integer not null,
         `item_categories` varchar(255),
+        `news_categories` varchar(255),
         `spam` varchar(255),
         `threshold` double precision,
         primary key (`id`)

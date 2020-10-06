@@ -20,6 +20,7 @@
 	<acme:form-double code="administrator.customisation.form.label.spamThreshold" path="thresholdPercentage" />
 	<acme:form-textarea code="administrator.customisation.form.label.spamWords" path="spam" />
 	<acme:form-textarea code="administrator.customisation.form.label.itemCategories" path="itemCategories" />
+	<acme:form-textarea code="administrator.customisation.form.label.newsCategories" path="newsCategories" />
 	
   	<acme:form-return code="administrator.customisation.form.button.return"/>
 </acme:form>

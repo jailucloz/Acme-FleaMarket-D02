@@ -31,4 +31,7 @@ public class Customisation extends DomainEntity {
 	@NotBlank
 	private String				itemCategories;
 
+	@NotBlank
+	private String				newsCategories;
+
 }

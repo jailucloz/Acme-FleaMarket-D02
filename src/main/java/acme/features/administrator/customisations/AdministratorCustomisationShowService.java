@@ -31,7 +31,7 @@ public class AdministratorCustomisationShowService implements AbstractShowServic
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "spam", "itemCategories");
+		request.unbind(entity, model, "spam", "itemCategories", "newsCategories");
 		DecimalFormat numberFormat = new DecimalFormat("#.00");
 		StringBuilder spamThresholdPercent = new StringBuilder();
 		spamThresholdPercent.append(numberFormat.format(entity.getThreshold()));
