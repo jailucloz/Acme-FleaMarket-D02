@@ -6,6 +6,24 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `advertisement` (
+       `id` integer not null,
+        `version` integer not null,
+        `average_discount_amount` double precision,
+        `average_discount_currency` varchar(255),
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `initial_time` datetime(6),
+        `large_discount_amount` double precision,
+        `large_discount_currency` varchar(255),
+        `picture` varchar(255),
+        `small_discount_amount` double precision,
+        `small_discount_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `anonymous` (
        `id` integer not null,
         `version` integer not null,
@@ -29,6 +47,29 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `customisation` (
+       `id` integer not null,
+        `version` integer not null,
+        `item_categories` varchar(255),
+        `spam` varchar(255),
+        `threshold` double precision,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `figment` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `description` varchar(255),
+        `inventor_name` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `lucas_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -38,12 +79,56 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `material_sheet` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `home_page` varchar(255),
+        `provider_name` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `news` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `category` varchar(255),
+        `deadline` datetime(6),
+        `header_picture` varchar(255),
+        `related_news` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `suggestion` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tool_sheet` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `home_page` varchar(255),
+        `provider_name` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
