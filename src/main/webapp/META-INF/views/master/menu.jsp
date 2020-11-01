@@ -20,14 +20,42 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.jaime" action="http://www.google.com/"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.news.list" action="/anonymous/news/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.material-sheet.list" action="/anonymous/material-sheet/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.tool-sheet.list" action="/anonymous/tool-sheet/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.advertisement.list" action="/anonymous/advertisement/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous.bulletin" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.bulletin.lucas" action="/anonymous/lucas-bulletin/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.bulletin.lucas.create" action="/anonymous/lucas-bulletin/create"/>
+		
+			
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			
+			<acme:menu-suboption code="master.menu.authenticated.news.list" action="/authenticated/news/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.material-sheet.list" action="/authenticated/material-sheet/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.tool-sheet.list" action="/authenticated/tool-sheet/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.advertisement.list" action="/authenticated/advertisement/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.suggestion.list" action="/authenticated/suggestion/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.figment.list" action="/authenticated/figment/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
+		<acme:menu-suboption code="master.menu.administrator.news.list" action="/administrator/news/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>

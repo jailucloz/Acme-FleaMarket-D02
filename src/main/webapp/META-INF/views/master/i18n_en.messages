@@ -29,7 +29,10 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
-
+master.menu.anonymous.news.list = Active news list
+master.menu.anonymous.material-sheet.list = Material sheets list
+master.menu.anonymous.tool-sheet.list = Tool sheets list
+master.menu.anonymous.advertisement.list = Active advertisements list
 
 master.menu.anonymous.favourite-link.jaime = Jaime's favourite link
 
@@ -41,10 +44,22 @@ master.menu.anonymous.bulletin = Bulletins
 master.menu.anonymous.bulletin.lucas = Lucas Bulletin
 master.menu.anonymous.bulletin.lucas.create = Create Lucas Bulletin
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.news.list = Active news list
+master.menu.authenticated.material-sheet.list = Material sheets list
+master.menu.authenticated.tool-sheet.list = Tool sheets list
+master.menu.authenticated.tool-advertisement.list = Advertisements list
+master.menu.authenticated.suggestion.list = Suggestions list
+master.menu.authenticated.figment.list = Figments list
+master.menu.authenticated.advertisement.list = Active advertisements list
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.news.list = News list
 master.menu.administrator.shutdown = Shut down
 
 # master.menu.provider ########################################################
