@@ -218,10 +218,10 @@
 	<!-- Customisation -->
 	
 	<bean id="Customisation" class="acme.entities.customisations.Customisation">
-		<property name="spam" value="sex,hard core,viagra,cialis,nigeria,you've won,million dollar,sexo,duro,has ganado,millón de dólares"/>
+		<property name="spam" value="sex, hard core, viagra, cialis, nigeria, you've won, million dollar, sexo, duro, has ganado, millón de dólares"/>
 		<property name="threshold" value="2.50"/>
-		<property name="itemCategories" value="Toilette,Kitchen,Living room,Sleeping room,Garden"/>
-		<property name="newsCategories" value="Breaking news, Important news, Warning,Information"/>
+		<property name="itemCategories" value="Toilette, Kitchen, Living room, Sleeping room, Garden"/>
+		<property name="newsCategories" value="Breaking news, Important news, Warning, Information"/>
 		
 	</bean>
 	

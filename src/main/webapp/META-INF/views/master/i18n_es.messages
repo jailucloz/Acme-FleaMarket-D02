@@ -58,6 +58,7 @@ master.menu.authenticated.advertisement.list = Lista de anuncios activos
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
+master.menu.administrator.customisation.display = Ver parámetros de personalización
 master.menu.administrator.news.list = Lista de noticias
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
